@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MyTimelineFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/relLayoutFrag1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/layout_top_tab_fragment" />
+
+
+
+        </RelativeLayout>
+
+        <!-- Middle section (body) -->
+        <RelativeLayout
+            android:id="@+id/relLayoutf2"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_below="@+id/relLayoutFrag1">
+
+            <include layout="@layout/layout_center_viewpager" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="63dp"
+                android:layout_height="45dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_upload" />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/relLayoutf2">
+            <include   layout="@layout/layout_bottom_feeds"
+               android:layout_height="match_parent"
+                android:layout_width="match_parent" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</FrameLayout>
